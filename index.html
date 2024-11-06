@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>About Me!</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">ItsMeValzz</a>
+        <nav>
+            <a href="#" class="active">Home</a>
+            <a href="#services">Pelayanan</a>
+            <a href="#skills">Skills</a>
+            <a href="#education">Edukasi</a>
+            <a href="#experience">Experience</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="home">
+        <div class="home-video">
+            <video autoplay loop muted playsinline>
+                <source src="furina.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="home-content">
+            <h1>Hi, It's <span>Valzha!</span></h1>
+            <h3 class="typing-text">I'm a <span></span></h3>
+            <p>Pelajar berumur 15 tahun yang sudah menguasai bahasa pemrograman JavaScript, Html, Python, NodeJS. Dan pelajar ini memulai karir programing di umur 12 tahun!</p>
+            <div class="social-icons">
+                <a href="https://www.tiktok.com/@laxxitsme" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="https://www.instagram.com/vlzzzz_29/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://wa.me/6287882430459" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://github.com/ItsMeValls" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div>
+            <a href="#contact" class="btn">Contact Me!</a>
+        </div>
+    </section>
+    
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <h2>WEBSITE</h2>
+        <p>Created by Valzha Hyru Akbar </p>
+    </section>
+</body>
+
+<!-- Skills Section -->
+<section id="skills" class="skills">
+    <h2>SKILLS</h2>
+    <div class="skills-icons">
+        <i class="fab fa-js-square skill-icon" title="JavaScript"></i>
+        <i class="fab fa-python skill-icon" title="Python"></i>
+        <i class="fab fa-node skill-icon" title="NodeJS"></i>
+        <i class="fab fa-html5 skill-icon" title="HTML"></i>
+    </div>
+    
+</section>
+
+
+
+<script>
+    let lastScrollY = window.scrollY;
+
+    window.addEventListener('scroll', () => {
+        const header = document.querySelector('header');
+        
+        // Check if scrolling down or up
+        if (window.scrollY > lastScrollY) {
+            header.style.top = '-80px'; // Hide header when scrolling down
+        } else {
+            header.style.top = '0'; // Show header when scrolling up
+        }
+        
+        lastScrollY = window.scrollY;
+    });
+</script>
+<script src="scrollHeader.js"></script>
+
+</html>
